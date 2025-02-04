@@ -1,0 +1,84 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+:root {
+    --white-color: #FFF;
+    --link-color: #929292;
+    --dark-color: #222;
+    --warning-color: #D82020;
+    --blue-color: aliceblue
+}
+html, body {
+    margin: 0
+}
+body {
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    font-size: 1rem;
+    position: relative;
+    min-height: 100vh;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+a {
+    font-weight: 500
+}
+.header,
+.footer {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+    color: var(--white-color)
+}
+.header {
+    justify-content: space-between
+}
+.main {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem
+}
+@media screen and (min-width:48em) {
+    .nowrap {
+        flex-wrap: nowrap
+    }    
+}
+.img--xsmall {
+    width: 12rem
+}
+.img--small {
+    width: 22rem
+}
+.img--medium {
+    width: 33rem
+}
+.dark--bg {
+    background-color: var(--dark-color)
+}
+.dark--bg a {
+    color: var(--link-color)
+}
+.skip {
+    color: var(--white-color);
+    position: absolute;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important
+}
+.skip:focus {
+    all: unset;
+    padding: .5rem !important;
+    outline: 3px solid var(--white-color);
+    box-shadow: 0 0 0 6px var(--dark-color)
+}
