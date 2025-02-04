@@ -24,6 +24,10 @@ body {
 a {
     font-weight: 500
 }
+ul {
+    list-style: none;
+    padding: 0
+}
 .header,
 .footer {
     max-width: 80rem;
