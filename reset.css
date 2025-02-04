@@ -27,6 +27,9 @@ a {
 .button {
   min-width: 8rem /* to have a minimum size for all buttons */
 }
+.main {
+  outline: none
+}
 a:focus,
 input:focus,
 .button:focus {
