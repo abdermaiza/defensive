@@ -17,12 +17,15 @@ body {
     color: var(--dark-color);
     background-color: var(--white-color);
     font-size: 1rem;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
     position: relative;
     min-height: 100vh;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 }
 a {
-    font-weight: 500
+    font-weight: 500;
+    display: inline
 }
 ul {
     list-style: none;
