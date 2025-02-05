@@ -4,9 +4,7 @@
 
 body {
   line-height: 1.5; /* for main paragraph content, this will help low vision users and people with cognitive concerns such as dyslexia */
-  text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.0015em
+  letter-spacing: 0.0015em /* make our text more readable by adding small extra space between letters */
 }
 embed, iframe, object, img {
   max-width: 100% /* all image should be contained in their container elements to prevent distortion */
@@ -19,7 +17,6 @@ a:not([href]){
   outline: 4px solid var(--warning-color) /* makes sure all images will have an alt attribute, empty if decorative; ensure links have an href as well, if not, use a <button> */
 }
 a {
-  display: inline;
   text-underline-offset: 5px; /* to avoid a bad underline style on links */
   overflow-wrap: break-word; /* makes sure the long string will wrap and not bust out of the container */
   word-wrap: break-word /* used to break words that overflow their container */
@@ -28,7 +25,7 @@ a {
   min-width: 8rem /* to have a minimum size for all buttons */
 }
 .main {
-  outline: none
+  outline: none !important /* for the skip to content by keyboard nav, we should remove the outline on the main anchor */
 }
 a:focus,
 input:focus,
